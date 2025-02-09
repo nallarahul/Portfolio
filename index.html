@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/9e96235548.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nalla Rahul</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nalla Rahul</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/my-img.jpg" alt="Rahul-Image" class="profile-pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Nalla Rahul</h1>
+            <p class="section__text__p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">View Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <i class="fa-brands fa-linkedin fa-xl" onclick="location.href='https://www.linkedin.com/in/rahul-nalla/'"></i>
+                <i class="fa-brands fa-github fa-xl" onclick="location.href='https://github.com/nallarahul'"></i>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section-text section__text__p1">Get to Know More...</p>
+        <h1 class="section-title title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic">
+                <img src="./assets/Untitled design.png" alt="About me Picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="text-container">
+                        <p>
+                            I'm passionate about data science and web development, combining analytical skills with creative coding to build impactful solutions. I’ve earned a certificate in MERN Fullstack and worked on projects like Keepnote, where I developed user-friendly web applications. I’m always looking to create innovative, functional, and data-driven platforms that make a real difference.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <p class="section-text section__text__p1">Explore My</p>
+        <h1 class="section-title title">Skills</h1>
+        <div class="skill-container">
+            <li>
+                <h3>React</h3>
+                <span class="bar"><span class="react"></span></span>
+            </li>
+            <li>
+                <h3>Node</h3>
+                <span class="bar"><span class="node"></span></span>
+            </li>
+            <li>
+                <h3>Express</h3>
+                <span class="bar"><span class="express"></span></span>
+            </li>
+            <li>
+                <h3>Figma</h3>
+                <span class="bar"><span class="figma"></span></span>
+            </li>
+        </div>
+        <div class="skill-container-1">
+            <li>
+                <h3>MySQL</h3>
+                <span class="bar"><span class="sql"></span></span>
+            </li>
+            <li>
+                <h3>Python</h3>
+                <span class="bar"><span class="python"></span></span>
+            </li>
+            <li>
+                <h3>Java</h3>
+                <span class="bar"><span class="java"></span></span>
+            </li>
+            <li>
+                <h3>Power BI</h3>
+                <span class="bar"><span class="power"></span></span>
+            </li>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section-text section__text__p1">Browse My</p>
+        <h1 class="section-title title">Projects</h1>
+        <div class="container">
+            <div class="project-container">
+                <div class="article-container">
+                    <div class="photo-container">
+                        <img 
+                            src="./assets/project-1.png"
+                            alt="project-1-img"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="section-title project-title">AceTheInterview</h2>
+                    <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/nallarahul/AceTheInterview'">Github</button>
+                    <button class="btn btn-color-2 project-btn left-btn" onClick="location.href='https://ngcprojects.github.io/AceTheInterview/'">Live</button>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="article-container">
+                    <div class="photo-container">
+                        <img 
+                            src="./assets/project-2-img.png"
+                            alt="project-1-img"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="section-title project-title">Keeper</h2>
+                    <button class="btn btn-color-2 project-btn" onClick="location.href='https://github.com/nallarahul/Keeper-App'">Github</button>
+                    <button class="btn btn-color-2 project-btn left-btn" onclick="location.href='https://keeper-app-henna.vercel.app/'">Live</button>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="article-container">
+                    <div class="photo-container">
+                        <img 
+                            src="./assets/project-3.png"
+                            alt="project-1-img"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="section-title project-title">Sales Analysis</h2>
+                    <button class="btn btn-color-2 project-3-btn" onclick="location.href='https://drive.google.com/drive/folders/1uHohW8RT9Itd-2z-nlm1MR6g4Hl91YO0'">Drive</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+        <p class="section-text section__text__p1">Wanna get in touch?</p>
+        <h1 class="section-title title">Contact Me</h1>
+            <form action="https://api.web3forms.com/submit" class="contact-left" method="POST">
+                <input type="hidden" name="access_key" value="6f8cc3b4-ebb9-4efc-be8b-543288f86442">
+                <input type="text" name="Name" placeholder="Your Name" class="contact-input" required>
+                <input type="email" name="Email" placeholder="Your Email" class="contact-input" required>
+                <textarea name="Message" placeholder="Your Message" class="contact-input" required></textarea>
+                <button type="submit" class="btn btn-color-2">Send</button>
+            </form>
+        </div>
+    </section>
+    <div class="website-footer">
+        Copyright © 
+        <span id="copyright">
+            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        </span> 
+        Nalla Rahul.
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
